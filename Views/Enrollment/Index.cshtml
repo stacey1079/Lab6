@@ -38,6 +38,9 @@
         <th>
             @Html.DisplayNameFor(model => model.EnrollmentYear)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Notes)
+        </th>
         <th></th>
     </tr>
 
@@ -69,6 +72,9 @@
     </td>
     <td>
         @Html.DisplayNameFor(model => model.EnrollmentYear)
+    </td>
+    <td>
+        @Html.DisplayNameFor(model => model.Notes)
     </td>
     <td>
         @Html.ActionLink("Edit", "Edit", new { id = item.EnrollmentId }) |
