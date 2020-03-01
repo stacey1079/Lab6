@@ -31,7 +31,17 @@ namespace EnrollmentApplication.Models
         [Range(2018, 3000, ErrorMessage = "Must be enrolled after 2018")]
         public virtual int EnrollmentYear { get; set; }
 
-        [RegularExpression(@"[A-Za]")]
+        [RegularExpression(@"[A-Za]", ErrorMessage = "Notes contains unacceptable characters!")]
         public virtual String Notes { get; set; }
+
+        public virtual string Address1 { get; set; }
+
+        public virtual string Address2 { get; set; }
+
+        public virtual string City { get; set; }
+
+        public virtual string Zipcode { get; set; }
+
+        public virtual string State { get; set; }
     }
 }

@@ -8,9 +8,10 @@ namespace EnrollmentApplication.Models
 {
     public class InvalidCharsAttribute : ValidationAttribute
     {
-        public InvalidCharsAttribute()
+        readonly int minLetters;
+        public InvalidCharsAttribute(int minLetters)
         {
-            //_minLetters = minLetters;
+            this.minLetters = minLetters;
         }
 
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
@@ -18,9 +19,9 @@ namespace EnrollmentApplication.Models
             if (value != null)
             {
                 var valueAsString = value.ToString();
-                if (valueAsString.Split(' ').Length > 20)
+                if (valueAsString.Split(' ').Length > minLetters)
                 {
-                    return new ValidationResult("Not enough letters");
+                    return new ValidationResult("Error! Not enough letters");
                 }
             }
             return ValidationResult.Success;

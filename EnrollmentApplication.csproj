@@ -136,6 +136,18 @@
     <Compile Include="Migrations\202003010422449_Update1.Designer.cs">
       <DependentUpon>202003010422449_Update1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003010518021_Update2.cs" />
+    <Compile Include="Migrations\202003010518021_Update2.Designer.cs">
+      <DependentUpon>202003010518021_Update2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003011959566_update3.cs" />
+    <Compile Include="Migrations\202003011959566_update3.Designer.cs">
+      <DependentUpon>202003011959566_update3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003012031374_Update4.cs" />
+    <Compile Include="Migrations\202003012031374_Update4.Designer.cs">
+      <DependentUpon>202003012031374_Update4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\EnrollmentDB.cs" />
     <Compile Include="Global.asax.cs">
@@ -212,6 +224,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202003010422449_Update1.resx">
       <DependentUpon>202003010422449_Update1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003010518021_Update2.resx">
+      <DependentUpon>202003010518021_Update2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003011959566_update3.resx">
+      <DependentUpon>202003011959566_update3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003012031374_Update4.resx">
+      <DependentUpon>202003012031374_Update4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
